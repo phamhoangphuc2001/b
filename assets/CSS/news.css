@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+    height: 950px;
+}
+.header-search{
+    background-color: #154054;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+}
+#logo a{
+    color: #CC6633;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Rubik Iso', cursive;
+    text-decoration: none;
+    margin-left: 150px;
+}
+.input-search i{
+    position: absolute;
+    font-size: 15px;
+    left: 240%;
+    top: 1px;
+    background: #00FFCC;
+    padding: 11px;
+}
+.input-search {
+    position: relative;
+    margin: 0 100px ;
+}
+.input-search input{
+    outline: none;
+    width: 250%;
+    padding: 10px 20px;
+}
+.Signup-login{
+    margin-left: 400px;
+}
+.Signup-login a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.Signup-login a:hover{
+    color: #00FFCC;
+}
+#toggle{
+    display: none;
+}
+#header hr{
+    border-color: #00FFCC;
+}
+/*menu*/
+ul{
+    list-style: none;
+}
+nav{
+    background-color: #154054;
+    width: 100%;
+    position: relative;
+}
+#main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#main-menu li a{
+    color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+#main-menu li a:hover{
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+#main-menu li ::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 5px;
+    background: orangered;
+    transform-origin: left; 
+    transition: width .5s;
+}
+#main-menu li a:hover::before{
+    width: 100%;
+}
+#main-menu li:hover .menu-child{
+    opacity: 1;
+    visibility: visible;
+}
+#main-menu li:hover .menu-child-1{
+    opacity: 1;
+    visibility: visible;
+}
+.menu-child-1{
+    position: absolute;
+    top: 100%;
+    width: 11%;
+    left: 33%;
+    background-color:#154054;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.menu-child{
+    position: absolute;
+    top: 100%;
+    width: 40%;
+    left: 30%;
+    background-color:#154054;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.menu-child-item{
+    width: 34%;
+}
+.menu-child-item h1{
+    color: #ffff;
+    font-size: 18px;
+    padding: 20px;
+    background-color:#3366CC;
+    text-transform: uppercase;
+}
+#toggle{
+    display: none;
+}
+
+
+/*footer*/
+.text-bumblebee-contact{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to top,#141e30, #243b55);
+}
+.bumblebee-contact{
+    width: 80%;
+    height: 310px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#address{
+    width: 30%;
+    height: 300px;
+    margin-top: 30px;
+}
+#address h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+#address ul{
+    list-style: none;
+}
+#address li a{
+    color: 	#C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 40px;
+}
+#address ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color:	#C0C0C0 ;
+}
+.address-icon{
+    margin-left: 30px;
+}
+.address-icon img{
+    width: 25px;
+    height: 25px;
+}
+#news{
+    width: 30%;
+    height: 300px;
+    margin-top: 30px;
+}
+#news h2{
+    font-size: 20px;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#news ul{
+    list-style: none;
+}
+#news ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: 	#C0C0C0;
+    line-height: 40px;
+}
+#news ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color:	#C0C0C0 ;
+}
+#client{
+    width: 30%;
+    height: 300px;
+    margin-top: 30px;
+}
+#client h2{
+    font-size: 20px;
+    color: 	#C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#client ul{
+    list-style: none;
+
+}
+#client ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: 	#C0C0C0;
+    line-height: 40px;
+}
+#client ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color:	#C0C0C0 ;
+}

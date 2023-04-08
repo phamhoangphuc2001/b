@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />  
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>News</title>
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <div class="header-search">
+                <div id="logo">
+                    <a href="/index.html">Sabo Travel</a>
+                </div>
+                <div class="input-search">
+                    <input type="text" placeholder="Từ khoá tìm kiếm...">
+                    <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div id="toggle">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+                <div class="Signup-login">
+                    <a href="#">Đăng kí</a> 
+                    <a href="#">/</a>
+                    <a href="#">Đăng nhập</a>
+                </div>
+            </div>
+            <hr>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="/index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                        <div class="menu-child-1">
+                            <ul>
+                                <li><a href="#">Cẩm nang du lịch</a></li>
+                                <li><a href="#">Kinh nghiệm du lịch</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Du lịch trong nước</a>
+                        <div class="menu-child">
+                            <div class="menu-child-item">
+                                <h1>Miền Bắc</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Hà Nội</a></li>
+                                    <li><a href="#">Sapa</a></li>
+                                    <li><a href="#">Vịnh Hạ Long</a></li>
+                                    <li><a href="#">Hà Giang</a></li>
+                                    <li><a href="#">Ninh Bình</a></li>
+                                    <li><a href="#">Bắc Giang</a></li>
+                                    <li><a href="#">Lạng Sơn</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Miền Trung</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Quảng Bình</a></li>
+                                    <li><a href="#">Huế</a></li>
+                                    <li><a href="#">Đà Nẵng</a></li>
+                                    <li><a href="#">Hà Tỉnh</a></li>
+                                    <li><a href="#">Bình Dịnh</a></li>
+                                    <li><a href="#">Nha Trang</a></li>
+                                    <li><a href="#">Phú Yên</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Miền Nam</h1>
+                                <ul class="menu-child-list"> 
+                                    <li><a href="#">Đà Lạt</a></li>
+                                    <li><a href="#">Phan Thiết</a></li>
+                                    <li><a href="#">Vũng Tàu</a></li>
+                                    <li><a href="#">Đồng Tháp</a></li>
+                                    <li><a href="#">Phú Quốc</a></li>
+                                    <li><a href="#">Cần Thơ</a></li>
+                                    <li><a href="#">Cà Mau</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Du lịch nước ngoài</a>
+                        <div class="menu-child">
+                            <div class="menu-child-item">
+                                <h1>Châu Á</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Hàn Quốc</a></li>
+                                    <li><a href="#">Nhật Bản</a></li>
+                                    <li><a href="#">Trung Quốc</a></li>
+                                    <li><a href="#">Thái Lan</a></li>
+                                    <li><a href="#">Singapore</a></li>
+                                    <li><a href="#">Malaysia</a></li>
+                                    <li><a href="#">Indonensia</a></li>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Châu Âu</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Ý</a></li>
+                                    <li><a href="#">Pháp</a></li>
+                                    <li><a href="#">Anh</a></li>
+                                    <li><a href="#">Đức</a></li>
+                                    <li><a href="#">Tây Ban Nha</a></li>
+                                    <li><a href="#">Hà lan</a></li>
+                                    <li><a href="#">Thuỵ Sĩ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Châu Mỹ</h1>
+                                <ul class="menu-child-list"> 
+                                    <li><a href="#">Mỹ</a></li>
+                                    <li><a href="#">Canada</a></li>
+                                    <li><a href="#">Agentina</a></li>
+                                    <li><a href="#">Brazil</a></li>
+                                    <li><a href="#">Colombia</a></li>
+                                    <li><a href="#">Chile</a></li>
+                                    <li><a href="#">Uruguay</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="/news.html">Tin tức</a></li>
+                    <li><a href="/contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article>
+            <div class="text-tour-famous">
+                <h1>Điểm đến không thể bỏ qua</h1>
+                <h2>Chiêm ngưỡng tuyệt tác thiên nhiên</h2>
+                <div class="tour-famous-list">
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="/assets/hình ảnh/bana.webp" alt="Bà Nà Hill">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content">
+                                <h3>Bà Nà Hills</h3>
+                                <h4>Xứ sở thần tiên</h4>
+                            </div>
+                            <p>
+                                - Bà Nà Hills là quần thể du lịch nghỉ dưỡng kết hợp vui chơi giải trí đẳng cấp bậc nhất Việt Nam cách trung tâm thành phố Đà Nẵng hơn 20 km. <br>
+                                - Bà Nà Hills được mênh danh là chốn bồng lai tiên cảnh, sở hữu khí hậu tuyệt vời cùng cảnh quan thiên nhiên kỳ thú. <br>
+                                - Đến với Bà Nà Hills để trải nghiệm khí hậu 4 mùa trong một ngày cùng nhiều hoạt động lễ hội, vui chơi giải trí, ẩm thực hấp dẫn đa dạng.
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="/assets/hình ảnh/du-lich-cu-lao-cham-island.jpg" alt="Cù lao Chàm">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content">
+                                <h3>Cù Lao Chàm</h3>
+                                <h4>Hòn ngọc xanh giữa biển Đông</h4>
+                            </div>
+                            <p>
+                                - Cù Lao Chàm là một hòn đảo thuộc địa phận của xã Tân Hiệp, thành phố Hội An, tỉnh Quảng Nam, nằm cách biển Cửa Đại về khoảng 16km. <br>
+                                - Hiện Cù Lao Chàm được UNESCO công nhận là khu dự trữ sinh quyển của thế giới. <br>
+                                - Những địa điểm du lịch nổi tiếng ở nơi đây: Giếng cổ Champa, Lặn ngắm san hô, khu bảo tồn biển,... <br>
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="/assets/hình ảnh/6.jpg" alt="Biển Mỹ Khê">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content middle">
+                                <h3>Biển Mỹ Khê</h3>
+                                <h4>Bãi Biển đẹp nhất hành tinh</h4>
+                            </div>
+                            <p>
+                                - Bãi biển Mỹ Khê thuộc phường Phước Mỹ, quận Sơn Trà, thành phố Đà Nẵng, cách trung tâm thành phố khoảng 2km. <br>
+                                - Biển Mỹ Khê là bãi biển nằm trong top 6 bãi biển đẹp nhất hành tinh, là điểm đến mà ai cũng muốn ghé thăm thử một lần. <br>
+                                - Bãi biển Mỹ Khê ở Đà Nẵng nổi tiếng với dải cát trắng mịn, nước trong xanh, ấm áp quanh năm, 
+                                sóng biển êm nhẹ cùng hàng dừa xanh bao quanh, tạo nên vẻ đẹp khó cưỡng. <br>
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="/assets/hình ảnh/B1.jpg" alt="Hội An">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content middle">
+                                <h3>Hội An</h3>
+                                <h4>Xứ sở đèn lồng</h4>
+                            </div>
+                            <p>
+                                - Phố cổ Hội An là một đô thị cổ nằm ở hạ lưu sông Thu Bồn,
+                                thuộc vùng đồng bằng ven biển tỉnh Quảng Nam, cách thành phố Đà Nẵng khoảng chừng 30km về phía Nam. <br>
+                                - Những mái ngói cũ phủ đầy rêu phong, những con đường ngập trong sắc đỏ của đèn lồng, những bức hoành phi được chạm trổ tinh vi, 
+                                tất cả như đưa ta về với một thế giới của vài trăm năm trước. <br>
+                                - Một lần du lịch Hội An sẽ làm say đắm lòng du khách bởi những nét đẹp trường tồn cùng thời gian, vô cùng mộc mạc, bình dị.
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-cuisine">
+                <h1>Thưởng thức đặc sản Miền Trung</h1>
+                <h2>Cảm nhận tinh hoa ẩm thực</h2>
+                <section id="cuisine-img-item">
+                    <input type="radio" name="cuisine-img-item" id="s1">
+                    <input type="radio" name="cuisine-img-item" id="s2">
+                    <input type="radio" name="cuisine-img-item" id="s3" checked>
+                    <input type="radio" name="cuisine-img-item" id="s4">
+                    <input type="radio" name="cuisine-img-item" id="s5">
+                    <label for="s1" id="slider1">
+                        <img src="/assets/hình ảnh/mi quang ech.jpeg" width="100%" height="100%" alt="Mì Quảng ếch">
+                        <div class="text-img-cuisine">
+                            <span>Mì Quảng ếch</span>
+                        </div>
+                    </label>
+                    <label for="s2" id="slider2">
+                        <img src="/assets/hình ảnh/com-ga.jpg" width="100%" height="100%"  alt="Cơm Gà Tam Kì">
+                        <div class="text-img-cuisine">
+                            <span>Cơm Gà Tam Kì</span>
+                        </div>
+                    </label>
+                    <label for="s3" id="slider3">
+                        <img src="/assets/hình ảnh/cao lau.jpg" width="100%" height="100%"  alt="Cao Lầu">
+                        <div class="text-img-cuisine">
+                            <span>Cao Lầu</span>
+                        </div>
+                    </label>
+                    <label for="s4" id="slider4">
+                        <img src="/assets/hình ảnh/banh-xeo-da-nang-1_1629076954.jpg" width="100%" height="100%"  alt="Bánh Xèo Tôm nhảy">
+                        <div class="text-img-cuisine">
+                            <span>Bánh Xèo Tôm nhảy</span>
+                        </div>
+                    </label>
+                    <label for="s5" id="slider5">
+                        <img src="/assets/hình ảnh/banh-goi.jpg" width="100%" height="100%"  alt="Các Loại Bánh">
+                        <div class="text-img-cuisine">
+                            <span>Các Loại Bánh</span>
+                        </div>
+                    </label>
+                </section>
+            </div>
+        </article>
+        <footer>
+            <div class="text-bumblebee-contact">
+                <div class="bumblebee-contact text-address">
+                    <div id="address">
+                        <h1>Thông tin liên hệ</h1>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i><a href="#">Địa chỉ: 437 Nguyễn Văn Công, Phường 2, Gò Vấp, TPHCM</a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="#">Hotline: 0333573303</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#">Email: sabotravel@gmail.com</a></li>
+                            </ul>
+                            
+                        <div class="address-icon">
+                            <img src="/assets/hình ảnh/fb.png" alt="ERROR">
+                            <img src="/assets/hình ảnh/ig.png" alt="ERROR">
+                            <img src="/assets/hình ảnh/tw.webp" alt="ERROR">
+                            <img src="/assets/hình ảnh/zl.png" alt="ERROR">
+                        </div> 
+                    </div> 
+                    <div id="news">
+                        <h2>Tin tức</h2>
+                        <ul>
+                            <li><a href="">Bản tin Du Lịch Việt</a></li>
+                            <li><a href="">Cẩm nang du lịch</a></li>
+                            <li><a href="">Khám phá du lịch</a></li>
+                            <li><a href="">Sự kiện du lịch</a></li>
+                            <li><a href="">Tuyển dụng Du Lịch</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div id="client">
+                        <h2>Góc khách hàng</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Điều kiện & điều khoản</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Quyền riêng tư</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Chính sách bảo mật và thông tin</a></li>
+                            <li><i class="fa-solid fa-comments"></i><a href="#">Ý kiến khách hàng</a></li>
+                            <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Phương thức thanh toán</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+    </footer>
+    </div>
+</body>
+</html>
